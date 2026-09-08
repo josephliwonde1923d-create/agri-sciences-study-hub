@@ -7,102 +7,461 @@
     <title>Microeconomics - Agri-Sciences Study Hub</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .materials-section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .materials-section h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .material-category {
+            margin-bottom: 45px;
+        }
+
+        .material-category h2 {
+            text-align: left;
+            border-left: 5px solid #2e7d32;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+
+        .material-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .material-card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .material-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .material-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .material-card h3 {
+            margin-bottom: 10px;
+            color: #2e7d32;
+            font-size: 18px;
+        }
+
+        .material-card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .material-card a {
+            display: inline-block;
+            background: #2e7d32;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .material-card a:hover {
+            background: #1b5e20;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 20px;
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .notice {
+            background: #f1f8e9;
+            border-left: 5px solid #2e7d32;
+            padding: 15px;
+            margin: 20px auto 35px;
+            max-width: 1000px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        🌱 Agri-Sciences
+        <span>Study Hub</span>
+    </div>
 
-        <div class="logo">
-            🌱 Agri-Sciences
-            <span>Study Hub</span>
-        </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="level2.html">Level 2</a>
-            <a href="#">Past Papers</a>
-        </nav>
-
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="level2.html">Level 2</a>
+        <a href="#">Past Papers</a>
+    </nav>
+</header>
 
 
-    <!-- COURSE INTRO -->
-    <section class="page-intro">
-
-        <h1>📈 Microeconomics</h1>
-
-        <p>
-            Level 2 • Agri-Sciences
-        </p>
-
-    </section>
+<!-- PAGE INTRO -->
+<section class="page-intro">
+    <h1>📈 Microeconomics</h1>
+    <p>Level 2 • Agri-Sciences</p>
+</section>
 
 
-    <!-- COURSE MATERIALS -->
-    <section class="courses">
-
-        <h2>Microeconomics Materials</h2>
-
-        <div class="course-container">
+<!-- BACK TO LEVEL -->
+<a href="level2.html" class="back-button">
+    ← Back to Level 2
+</a>
 
 
-            <!-- NOTES -->
-            <div class="course-card">
+<!-- NOTICE -->
+<div class="notice">
+    <strong>📚 Study Materials:</strong>
+    Select any material below to open the presentation or document.
+</div>
 
-                <div class="course-icon">📚</div>
 
-                <h3>Lecture Notes</h3>
+<!-- MAIN MATERIALS -->
+<section class="materials-section">
 
-                <p>
-                    Access Microeconomics lecture
-                    notes and revision materials.
-                </p>
+    <h2>Microeconomics Study Materials</h2>
 
-                <a href="#">
-                    Open Notes →
+    <p class="section-description">
+        Lecture presentations and additional learning materials for Microeconomics.
+    </p>
+
+
+    <!-- MARKET AND DEMAND -->
+    <div class="material-category">
+
+        <h2>📊 Market, Demand & Supply</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">📈</div>
+                <h3>Market Forces, Demand and Supply</h3>
+                <p>Lecture 2 covering market forces, demand and supply.</p>
+                <a href="Lecture 2 Market Forces, Demand and Supply.pptx">
+                    Open Material →
                 </a>
-
             </div>
 
 
-            <!-- PAST PAPERS -->
-            <div class="course-card">
-
-                <div class="course-icon">📝</div>
-
-                <h3>Past Papers</h3>
-
-                <p>
-                    Practice with previous
-                    Microeconomics examination papers.
-                </p>
-
-                <a href="#">
-                    View Past Papers →
+            <div class="material-card">
+                <div class="material-icon">⚖️</div>
+                <h3>Market Equilibrium</h3>
+                <p>Lecture 3 covering market equilibrium and related concepts.</p>
+                <a href="Lecture 3 Market Equilibrium.pptx">
+                    Open Material →
                 </a>
-
             </div>
 
 
+            <div class="material-card">
+                <div class="material-icon">📉</div>
+                <h3>Elasticity and Its Applications</h3>
+                <p>Study material on elasticity and its applications.</p>
+                <a href="Elasticity and Its Applications.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">📉</div>
+                <h3>Elasticity of Demand and Supply</h3>
+                <p>Additional lecture material on demand and supply elasticity.</p>
+                <a href="Elasticity of Demand and Supply-Mine.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">📚</div>
+                <h3>Elasticity and Its Complications</h3>
+                <p>Lecture 4 covering elasticity and its complications.</p>
+                <a href="Lecture 4_Elasticity and its complications.pptx">
+                    Open Material →
+                </a>
+            </div>
+
         </div>
+    </div>
 
-    </section>
+
+    <!-- CONSUMER THEORY -->
+    <div class="material-category">
+
+        <h2>🛒 Consumer Theory</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">🛍️</div>
+                <h3>Consumer Choice</h3>
+                <p>Lecture 5 covering consumer choice and decision-making.</p>
+                <a href="Lecture 5 Consumer Choice.pptx">
+                    Open Material →
+                </a>
+            </div>
 
 
-    <!-- FOOTER -->
-    <footer>
+            <div class="material-card">
+                <div class="material-icon">📊</div>
+                <h3>Utility Theory</h3>
+                <p>Material covering consumer behaviour and utility theory.</p>
+                <a href="Consumer_Behaviour_-_Utility_Theory.pptx">
+                    Open Material →
+                </a>
+            </div>
 
-        <h3>🌱 Agri-Sciences Study Hub</h3>
+        </div>
+    </div>
 
-        <p>Learn • Grow • Succeed</p>
 
-        <p class="copyright">
-            © 2026 Agri-Sciences Study Hub | ✍️ ADEKHI
-        </p>
+    <!-- PRICE SYSTEM -->
+    <div class="material-category">
 
-    </footer>
+        <h2>💰 Price System & Government Intervention</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">💵</div>
+                <h3>Price System</h3>
+                <p>
+                    Price ceilings, price floors, taxes and subsidies.
+                </p>
+                <a href="Lecture 6 The Price System Price Ceilings and Floors, Taxes, and Subsidies.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">🌍</div>
+                <h3>Externalities in Value Chain Agriculture</h3>
+                <p>
+                    Lecture 7 covering externalities in agricultural value chains.
+                </p>
+                <a href="Lecture 7 Externalities in Value Chain Agriculture.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">🏛️</div>
+                <h3>Public Goods</h3>
+                <p>
+                    Lecture 14 covering public goods and their economic characteristics.
+                </p>
+                <a href="Lecture 14 Public Goods.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PRODUCER THEORY -->
+    <div class="material-category">
+
+        <h2>🏭 Producer Theory & Firm Behaviour</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">🏭</div>
+                <h3>Producer Choice, Firm and Market Supply</h3>
+                <p>
+                    Lecture 8 covering producer choice, firms and market supply.
+                </p>
+                <a href="Lecture 8 Producer Choice, Firm and Market Supply.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">📖</div>
+                <h3>Producer Theory</h3>
+                <p>
+                    Additional PDF material covering producer theory.
+                </p>
+                <a href="PRODUCER THEORY best.pdf">
+                    Open PDF →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">📈</div>
+                <h3>Economies and Diseconomies of Scale</h3>
+                <p>
+                    Material covering economies and diseconomies of scale.
+                </p>
+                <a href="Economies and Diseconomies of Scale.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- MARKET STRUCTURES -->
+    <div class="material-category">
+
+        <h2>🏢 Market Structures & Game Theory</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">🏢</div>
+                <h3>Market Structure</h3>
+                <p>
+                    Lecture 11 covering different market structures.
+                </p>
+                <a href="Lecture 11_MARKET STRUCTURE_045219.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">🎮</div>
+                <h3>Game Theory</h3>
+                <p>
+                    Lecture 12 introducing the concept of game theory.
+                </p>
+                <a href="Lecture 12 Game Theory concept.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+
+            <div class="material-card">
+                <div class="material-icon">🌾</div>
+                <h3>Market Structures in Agricultural Value Chains</h3>
+                <p>
+                    Material focusing on market structures within agricultural value chains.
+                </p>
+                <a href="Lecture 12 Market Structures in Value Chain Agriculture.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- LABOUR MARKETS -->
+    <div class="material-category">
+
+        <h2>👥 Labour Markets</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">👨‍🌾</div>
+                <h3>Labour Markets and Incentive Structures</h3>
+                <p>
+                    Lecture 13 covering labour markets and incentive structures in agricultural value chains.
+                </p>
+                <a href="Lecture 13 Labour Markets and Incentive Structures in Value Chain Agriculture.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ADDITIONAL MATERIAL -->
+    <div class="material-category">
+
+        <h2>📘 Additional Microeconomics Material</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">📚</div>
+                <h3>Microeconomics Presentation</h3>
+                <p>
+                    Additional Microeconomics presentation material.
+                </p>
+                <a href="Microeconomics Presentation VCA Aug 2023 To Share.pptx">
+                    Open Material →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- REFERENCE -->
+    <div class="material-category">
+
+        <h2>📕 Reference Textbook</h2>
+
+        <div class="material-grid">
+
+            <div class="material-card">
+                <div class="material-icon">📕</div>
+                <h3>Principles of Microeconomics</h3>
+
+                <p>
+                    Gregory Mankiw's Principles of Microeconomics.
+                    Use an authorized copy or legitimate library/source.
+                </p>
+
+                <a href="https://www.google.com/search?q=Gregory+Mankiw+Principles+of+Microeconomics+official">
+                    Find Authorized Source →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <h3>🌱 Agri-Sciences Study Hub</h3>
+
+    <p>Learn • Grow • Succeed</p>
+
+    <p class="copyright">
+        © 2026 Agri-Sciences Study Hub | ✍️ ADEKHI
+    </p>
+</footer>
 
 </body>
-</html>
+    </html>
