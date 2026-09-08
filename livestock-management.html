@@ -1,96 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Principles of Livestock Management - Agri-Sciences Study Hub</title>
+    <title>Principles of Livestock Management - Agri Sciences</title>
 
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .materials-section {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .materials-section h2 {
+        .materials-header {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 25px;
         }
 
-        .section-intro {
-            text-align: center;
-            color: #666;
-            margin-bottom: 35px;
+        .materials-header h2 {
+            margin-bottom: 8px;
         }
 
-        .material-category {
-            margin-bottom: 40px;
+        .material-section {
+            margin-bottom: 30px;
         }
 
-        .material-category h2 {
-            text-align: left;
-            border-left: 5px solid #2e7d32;
-            padding-left: 12px;
-            margin-bottom: 20px;
-        }
-
-        .material-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
+        .material-section h2 {
+            margin-bottom: 15px;
         }
 
         .material-card {
-            background: white;
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .material-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .material-icon {
-            font-size: 34px;
-            margin-bottom: 10px;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
         .material-card h3 {
-            color: #2e7d32;
-            font-size: 18px;
-            margin-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 8px;
         }
 
         .material-card p {
-            color: #666;
-            line-height: 1.5;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .material-card a {
             display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
             background: #2e7d32;
             color: white;
-            padding: 10px 15px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: bold;
         }
 
         .material-card a:hover {
-            background: #1b5e20;
+            opacity: 0.9;
         }
 
-        .back-button {
+        .back-link {
             display: inline-block;
-            margin: 20px;
-            color: #2e7d32;
+            margin-bottom: 20px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -100,382 +68,245 @@
 <body>
 
 <header>
-
-    <div class="logo">
-        🌱 Agri-Sciences
-        <span>Study Hub</span>
-    </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="level3.html">Level 3</a>
-        <a href="#">Past Papers</a>
-    </nav>
-
+    <h1>Principles of Livestock Management</h1>
+    <p>BTCD3501 — Level 3, Semester 1</p>
 </header>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="level3.html">Level 3</a>
+</nav>
 
-<section class="page-intro">
+<main>
 
-    <h1>🐄 Principles of Livestock Management</h1>
+    <a class="back-link" href="level3.html">
+        ← Back to Level 3
+    </a>
 
-    <p>
-        Level 3 • Semester 1
-    </p>
-
-</section>
-
-
-<a href="level3.html" class="back-button">
-    ← Back to Level 3
-</a>
-
-
-<section class="materials-section">
-
-    <h2>📚 Lecture Materials</h2>
-
-    <p class="section-intro">
-        Lecture presentations and study materials for Principles of Livestock Management.
-    </p>
+    <section class="materials-header">
+        <h2>Livestock Management Study Materials</h2>
+        <p>
+            Lecture notes and learning materials for Principles of Livestock Management.
+        </p>
+    </section>
 
 
-    <!-- GENERAL LIVESTOCK MANAGEMENT -->
+    <!-- GENERAL LIVESTOCK PRODUCTION -->
 
-    <div class="material-category">
+    <section class="material-section">
 
-        <h2>🐄 Livestock Production & Management</h2>
+        <h2>1. Introduction to Livestock Production</h2>
 
-        <div class="material-grid">
+        <div class="material-card">
+            <h3>Principles of Livestock Production</h3>
+            <p>Introduction and fundamental principles of livestock production.</p>
 
-            <div class="material-card">
-
-                <div class="material-icon">🐄</div>
-
-                <h3>Principles of Livestock Production</h3>
-
-                <p>
-                    Introduction to the principles and practices of livestock production.
-                </p>
-
-                <a href="Principles of Livestock Production.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🐮</div>
-
-                <h3>Beef Production and Management</h3>
-
-                <p>
-                    Lecture material on beef production and management.
-                </p>
-
-                <a href="5 Beef Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🐷</div>
-
-                <h3>Pig Production and Management</h3>
-
-                <p>
-                    Lecture material covering pig production and management.
-                </p>
-
-                <a href="4 Pig Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🐄</div>
-
-                <h3>Dairy Production and Management</h3>
-
-                <p>
-                    Lecture material covering dairy production and management.
-                </p>
-
-                <a href="6 Dairy Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
+            <a href="1.%20Principles%20of%20Livestock%20Production.pptx">
+                Open Lecture Notes →
+            </a>
         </div>
 
-    </div>
-
-
-    <!-- POULTRY -->
-
-    <div class="material-category">
-
-        <h2>🐔 Poultry Production & Management</h2>
-
-        <div class="material-grid">
-
-            <div class="material-card">
-
-                <div class="material-icon">🐔</div>
-
-                <h3>Improved Village Chicken Production</h3>
-
-                <p>
-                    Production and management of improved village chickens.
-                </p>
-
-                <a href="3. 1 Improved Village Chicken Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🥚</div>
-
-                <h3>Layer Production and Management</h3>
-
-                <p>
-                    Lecture material on layer production and management.
-                </p>
-
-                <a href="3. 2 Layer Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🐔</div>
-
-                <h3>Broiler Production and Management</h3>
-
-                <p>
-                    Lecture material on broiler production and management.
-                </p>
-
-                <a href="3. Broiler Production and Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">🐣</div>
-
-                <h3>Hatchery Management</h3>
-
-                <p>
-                    Lecture material covering hatchery management.
-                </p>
-
-                <a href="3. Hatchery Management.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- ANIMAL NUTRITION -->
-
-    <div class="material-category">
-
-        <h2>🌾 Animal Nutrition & Feed</h2>
-
-        <div class="material-grid">
-
-            <div class="material-card">
-
-                <div class="material-icon">🌾</div>
-
-                <h3>Animal Nutrition and Feed Formulation Technology</h3>
-
-                <p>
-                    Lecture material on animal nutrition and feed formulation technology.
-                </p>
-
-                <a href="2. Animal Nutrition and Feed Formulation technology.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-
-            <div class="material-card">
-
-                <div class="material-icon">⚖️</div>
-
-                <h3>Feed Ration Formulation</h3>
-
-                <p>
-                    Study material covering feed ration formulation.
-                </p>
-
-                <a href="2.0 Feed Ration Formulation.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- PASTURE -->
-
-    <div class="material-category">
-
-        <h2>🌿 Pasture Management</h2>
-
-        <div class="material-grid">
-
-            <div class="material-card">
-
-                <div class="material-icon">🌿</div>
-
-                <h3>Pasture Production, Management and Preservation</h3>
-
-                <p>
-                    Lecture material covering pasture production, management and preservation.
-                </p>
-
-                <a href="2 2 Pasture Production, Management, and Preservation.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+    </section>
 
 
     <!-- ANIMAL PHYSIOLOGY -->
 
-    <div class="material-category">
+    <section class="material-section">
 
-        <h2>🔬 Animal Physiology</h2>
+        <h2>2. Animal Physiology, Nutrition and Pasture</h2>
 
-        <div class="material-grid">
+        <div class="material-card">
+            <h3>Comparative Animal Physiology of Various Livestock Species</h3>
+            <p>Comparative physiology of different livestock species.</p>
 
-            <div class="material-card">
-
-                <div class="material-icon">🔬</div>
-
-                <h3>Comparative Animal Physiology</h3>
-
-                <p>
-                    Comparative animal physiology of various livestock species.
-                </p>
-
-                <a href="1. 1 Comparative Animal Physiology of Various Livestock Species.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
+            <a href="2.%201%20Comparative%20Animal%20Physiology%20of%20Various%20Livestock%20Species.pptx">
+                Open Lecture Notes →
+            </a>
         </div>
 
-    </div>
 
+        <div class="material-card">
+            <h3>Pasture Production, Management, and Preservation</h3>
+            <p>Pasture production, management practices and preservation methods.</p>
 
-    <!-- ANIMAL BREEDING -->
-
-    <div class="material-category">
-
-        <h2>🧬 Animal Breeding & Reproduction</h2>
-
-        <div class="material-grid">
-
-            <div class="material-card">
-
-                <div class="material-icon">🧬</div>
-
-                <h3>Artificial Breeding Technologies</h3>
-
-                <p>
-                    Lecture material on artificial breeding technologies in livestock production.
-                </p>
-
-                <a href="8 Artificial Breeding Technologies in Livestock Production.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
+            <a href="2.%202%20Pasture%20Production,%20Management,%20and%20Preservation.pptx">
+                Open Lecture Notes →
+            </a>
         </div>
 
-    </div>
+
+        <div class="material-card">
+            <h3>Animal Nutrition and Feed Formulation Technology</h3>
+            <p>Animal nutrition and principles of feed formulation.</p>
+
+            <a href="2.%20Animal%20Nutrition%20and%20Feed%20Formulation%20technology.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+
+        <div class="material-card">
+            <h3>Feed Ration Formulation</h3>
+            <p>Principles and techniques used in livestock feed ration formulation.</p>
+
+            <a href="2.0%20Feed%20Ration%20Formulation.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- POULTRY PRODUCTION -->
+
+    <section class="material-section">
+
+        <h2>3. Poultry Production and Management</h2>
+
+        <div class="material-card">
+            <h3>Improved Village Chicken Production and Management</h3>
+            <p>Management and production of improved village chickens.</p>
+
+            <a href="3.%201%20Improved%20Village%20Chicken%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+
+        <div class="material-card">
+            <h3>Layer Production and Management</h3>
+            <p>Production and management practices for layer chickens.</p>
+
+            <a href="3.%202%20Layer%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+
+        <div class="material-card">
+            <h3>Broiler Production and Management</h3>
+            <p>Production and management of broiler chickens.</p>
+
+            <a href="3.%20Broiler%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+
+        <div class="material-card">
+            <h3>Hatchery Management</h3>
+            <p>Principles and practices of hatchery management.</p>
+
+            <a href="3.%20Hatchery%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- PIG PRODUCTION -->
+
+    <section class="material-section">
+
+        <h2>4. Pig Production</h2>
+
+        <div class="material-card">
+            <h3>Pig Production and Management</h3>
+            <p>Principles of pig production and management.</p>
+
+            <a href="4%20Pig%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- BEEF PRODUCTION -->
+
+    <section class="material-section">
+
+        <h2>5. Beef Production</h2>
+
+        <div class="material-card">
+            <h3>Beef Production and Management</h3>
+            <p>Production and management practices for beef cattle.</p>
+
+            <a href="5%20Beef%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- DAIRY PRODUCTION -->
+
+    <section class="material-section">
+
+        <h2>6. Dairy Production</h2>
+
+        <div class="material-card">
+            <h3>Dairy Production and Management</h3>
+            <p>Principles and practices of dairy cattle production and management.</p>
+
+            <a href="6%20Dairy%20Production%20and%20Management.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ARTIFICIAL BREEDING -->
+
+    <section class="material-section">
+
+        <h2>8. Artificial Breeding Technologies</h2>
+
+        <div class="material-card">
+            <h3>Artificial Breeding Technologies in Livestock Production</h3>
+            <p>Artificial breeding technologies used in livestock production.</p>
+
+            <a href="8%20Artificial%20Breeding%20Technologies%20in%20Livestock%20Production.pptx">
+                Open Lecture Notes →
+            </a>
+        </div>
+
+    </section>
 
 
     <!-- ANIMAL HEALTH -->
 
-    <div class="material-category">
+    <section class="material-section">
 
-        <h2>🩺 Animal Health & Biosecurity</h2>
+        <h2>9. Animal Health and Biosecurity</h2>
 
-        <div class="material-grid">
+        <div class="material-card">
+            <h3>Animal Health and Biosecurity Measures</h3>
+            <p>Important animal health and biosecurity practices in livestock production.</p>
 
-            <div class="material-card">
-
-                <div class="material-icon">🩺</div>
-
-                <h3>Animal Health and Biosecurity Measures</h3>
-
-                <p>
-                    Lecture material covering animal health and biosecurity measures.
-                </p>
-
-                <a href="9 Animal Health and Biosecurity Measures.pptx">
-                    Open Material →
-                </a>
-
-            </div>
-
+            <a href="9%20Animal%20Health%20and%20Biosecurity%20Measures.pptx">
+                Open Lecture Notes →
+            </a>
         </div>
 
-    </div>
+    </section>
 
 
-</section>
+    <section class="materials-header">
+        <a class="back-link" href="level3.html">
+            ← Back to Level 3 Courses
+        </a>
+    </section>
+
+</main>
 
 
 <footer>
-
-    <h3>🌱 Agri-Sciences Study Hub</h3>
-
-    <p>Learn • Grow • Succeed</p>
-
-    <p class="copyright">
-        © 2026 Agri-Sciences Study Hub | ✍️ ADEKHI
-    </p>
-
+    <p>© 2026 Agri Sciences Academic Resource Centre</p>
 </footer>
 
 </body>
-  </html>
+    </html>
