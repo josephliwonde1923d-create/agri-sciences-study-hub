@@ -7,91 +7,417 @@
     <title>Level 2 - Agri-Sciences Study Hub</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .semester-section {
+            padding: 35px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .semester-title {
+            text-align: left;
+            border-left: 5px solid #2e7d32;
+            padding-left: 12px;
+            margin-bottom: 25px;
+        }
+
+        .semester-description {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .course-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .course-card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .course-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .course-code {
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .course-card a {
+            display: inline-block;
+            margin-top: 12px;
+            background: #2e7d32;
+            color: white;
+            padding: 9px 15px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-card a:hover {
+            background: #1b5e20;
+        }
+
+        .coming-soon {
+            background: #eeeeee !important;
+            color: #555 !important;
+        }
+
+        .semester-divider {
+            max-width: 1000px;
+            margin: 10px auto;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        🌱 Agri-Sciences
+        <span>Study Hub</span>
+    </div>
 
-        <div class="logo">
-            🌱 Agri-Sciences
-            <span>Study Hub</span>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Past Papers</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+
+<!-- PAGE INTRO -->
+<section class="page-intro">
+    <h1>Level 2</h1>
+    <p>Second year Agri-Sciences courses and study materials.</p>
+</section>
+
+
+<!-- SEMESTER 1 -->
+<section class="semester-section">
+
+    <h2 class="semester-title">📘 Semester 1</h2>
+
+    <p class="semester-description">
+        Level 2 Semester 1 courses and study materials.
+    </p>
+
+    <div class="course-container">
+
+        <!-- STATISTICS -->
+        <div class="course-card">
+            <div class="course-icon">📊</div>
+
+            <div class="course-code">BVCA2301</div>
+
+            <h3>Statistics</h3>
+
+            <p>
+                Statistics lecture notes, study materials and past papers.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Past Papers</a>
-            <a href="#">About</a>
-        </nav>
 
-    </header>
+        <!-- MICROECONOMICS -->
+        <div class="course-card">
+            <div class="course-icon">📈</div>
 
+            <div class="course-code">BVCA2302</div>
 
-    <!-- PAGE INTRO -->
-    <section class="page-intro">
+            <h3>Microeconomics</h3>
 
-        <h1>Level 2</h1>
+            <p>
+                Microeconomics lecture notes, revision materials and past papers.
+            </p>
 
-        <p>
-            Second year Agri-Sciences courses and study materials.
-        </p>
-
-    </section>
-
-
-    <!-- COURSES -->
-    <section class="courses">
-
-        <h2>Level 2 Courses</h2>
-
-        <p class="section-intro">
-            Select a course to access notes and study materials.
-        </p>
-
-
-        <div class="course-container">
-
-
-            <!-- MICROECONOMICS -->
-            <div class="course-card">
-
-                <div class="course-icon">📈</div>
-
-                <h3>Microeconomics</h3>
-
-                <p>
-                    Lecture notes, revision materials
-                    and past papers.
-                </p>
-
-                <a href="microeconomics.html">
-                    View Course →
-                </a>
-
-            </div>
-
-
-            <!-- MORE LEVEL 2 COURSES WILL BE ADDED HERE -->
-
-
+            <a href="microeconomics.html">
+                View Course →
+            </a>
         </div>
 
-    </section>
+
+        <!-- PLANTATION CROPS 1 -->
+        <div class="course-card">
+            <div class="course-icon">🌴</div>
+
+            <div class="course-code">BVCA2303</div>
+
+            <h3>Plantation Crops 1</h3>
+
+            <p>
+                Plantation Crops 1 learning materials and lecture notes.
+            </p>
+
+            <a href="plantation1.html">
+                View Course →
+            </a>
+        </div>
 
 
-    <!-- FOOTER -->
-    <footer>
+        <!-- PRINCIPLES OF IRRIGATION -->
+        <div class="course-card">
+            <div class="course-icon">💧</div>
 
-        <h3>🌱 Agri-Sciences Study Hub</h3>
+            <div class="course-code">BVCA2304</div>
 
-        <p>Learn • Grow • Succeed</p>
+            <h3>Principles of Irrigation</h3>
 
-        <p class="copyright">
-            © 2026 Agri-Sciences Study Hub | ✍️ ADEKHI
-        </p>
+            <p>
+                Irrigation principles, lecture notes and study materials.
+            </p>
 
-    </footer>
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- BUSINESS ORGANISATION -->
+        <div class="course-card">
+            <div class="course-icon">🏢</div>
+
+            <div class="course-code">BVCA2305</div>
+
+            <h3>Business Organisation</h3>
+
+            <p>
+                Business organisation lecture notes and learning materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- SOIL SCIENCE -->
+        <div class="course-card">
+            <div class="course-icon">🌱</div>
+
+            <div class="course-code">BVCA2306</div>
+
+            <h3>Soil Science</h3>
+
+            <p>
+                Soil Science lecture notes, study materials and revision resources.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- PLANT BREEDING -->
+        <div class="course-card">
+            <div class="course-icon">🌾</div>
+
+            <div class="course-code">BVCA2307</div>
+
+            <h3>Plant Breeding</h3>
+
+            <p>
+                Plant Breeding lecture notes and study materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<hr class="semester-divider">
+
+
+<!-- SEMESTER 2 -->
+<section class="semester-section">
+
+    <h2 class="semester-title">📗 Semester 2</h2>
+
+    <p class="semester-description">
+        Level 2 Semester 2 courses and study materials.
+    </p>
+
+    <div class="course-container">
+
+        <!-- SUSTAINABLE SOIL FERTILITY -->
+        <div class="course-card">
+            <div class="course-icon">🌱</div>
+
+            <div class="course-code">BVCA2409</div>
+
+            <h3>Sustainable Soil Fertility Management</h3>
+
+            <p>
+                Lecture notes and study materials on sustainable soil fertility management.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- MACROECONOMICS -->
+        <div class="course-card">
+            <div class="course-icon">📊</div>
+
+            <div class="course-code">BVCA2408</div>
+
+            <h3>Macroeconomics</h3>
+
+            <p>
+                Macroeconomics lecture notes, revision materials and past papers.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- AGRO-PROCESSING -->
+        <div class="course-card">
+            <div class="course-icon">🏭</div>
+
+            <div class="course-code">BVCA2407</div>
+
+            <h3>Agro-Processing</h3>
+
+            <p>
+                Agro-Processing lecture notes and learning materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- FARM BUSINESS MANAGEMENT -->
+        <div class="course-card">
+            <div class="course-icon">🚜</div>
+
+            <div class="course-code">BVCA2406</div>
+
+            <h3>Farm Business Management</h3>
+
+            <p>
+                Farm Business Management lecture notes and study materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- BUSINESS LAW -->
+        <div class="course-card">
+            <div class="course-icon">⚖️</div>
+
+            <div class="course-code">BVCA2405</div>
+
+            <h3>Business Law 1</h3>
+
+            <p>
+                Business Law 1 lecture notes and learning resources.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- FINANCIAL MANAGEMENT -->
+        <div class="course-card">
+            <div class="course-icon">💰</div>
+
+            <div class="course-code">BVCA2402</div>
+
+            <h3>Financial Management</h3>
+
+            <p>
+                Financial Management lecture notes and study materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+
+        <!-- PLANTATION CROPS 2 -->
+        <div class="course-card">
+            <div class="course-icon">🌴</div>
+
+            <div class="course-code">BVCA2401</div>
+
+            <h3>Plantation Crops 2</h3>
+
+            <p>
+                Plantation Crops 2 lecture notes and study materials.
+            </p>
+
+            <a href="#" class="coming-soon">
+                Materials Coming Soon
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>🌱 Agri-Sciences Study Hub</h3>
+
+    <p>Learn • Grow • Succeed</p>
+
+    <p class="copyright">
+        © 2026 Agri-Sciences Study Hub | ✍️ ADEKHI
+    </p>
+
+</footer>
 
 </body>
 </html>
